@@ -1,0 +1,6 @@
+/src/
+./*.js
+./package-lock.json
+./.prettierrc
+./tsconfig.json
+./.gitignore

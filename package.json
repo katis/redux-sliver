@@ -1,0 +1,36 @@
+{
+  "name": "redux-sliver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/redux-sliver.commonjs.js",
+  "module": "dist/redux-sliver.esm.js",
+  "scripts": {
+    "docs": "typedoc --out docs ./src",
+    "build": "npm run rollup:esm && npm run rollup:commonjs",
+    "rollup:esm": "cross-env MODULE=esm rollup -c",
+    "rollup:commonjs": "cross-env MODULE=commonjs rollup -c",
+    "test:watch": "jest --watch",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "cross-env": "^5.2.1",
+    "immer": "^4.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "redux": "^4.0.4",
+    "rollup": "^1.21.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.24.2",
+    "ts-jest": "^24.1.0",
+    "tslib": "^1.10.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "redux": "4.x",
+    "immer": "4.x"
+  }
+}
